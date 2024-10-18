@@ -1,0 +1,11 @@
+# Simple 2D Image Style Transfer
+python scripts/styletransfer.py input_ims/test.png style_ims/style0.jpg
+
+# Masked Image Style Transfer
+python scripts/styletransfer.py input_ims/FlyingBird.jpg style_ims/style6.jpg --mask input_ims/FlyingBird_mask.jpg
+
+# Interpolated Sphere Style Transfer
+python scripts/styletransfer.py input_ims/test360.jpg style_ims/style3.jpg --image_type sphere
+
+# Masked Intepolated Sphere Style Transfer
+python scripts/styletransfer.py input_ims/stanford2d3ds_example.png style_ims/style3.jpg --image_type sphere --mask input_ims/pano-mask.png --device cpu
